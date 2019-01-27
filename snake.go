@@ -2,10 +2,10 @@ package main
 
 import (
     "fmt"
-    "time"
     "os"
     "os/signal"
     "syscall"
+    "strings"
 )
 
 
@@ -28,10 +28,14 @@ func main() {
    
     // Exit game code
     for {
-        t := time.Now()
-        fmt.Printf("\033[1m Hello: %v\n", t)
-        fmt.Printf("\033[1m Hello: %v\n", t)
-        fmt.Printf("\033[1m Hello: %v\n", t)
+        fmt.Printf("\033[1m\u001b[48;5;239m%v\n", strings.Repeat(" ", 100))
+        fmt.Printf("\033[1m\u001b[48;5;239m%v\n", strings.Repeat(" ", 100))
+        fmt.Printf("\033[1m\u001b[48;5;239m%v\n", strings.Repeat(" ", 100))
+        fmt.Printf("\033[1m\u001b[48;5;239m%v\n", strings.Repeat(" ", 100))
+        fmt.Printf("\033[1m\u001b[48;5;239m%v\n", strings.Repeat(" ", 100))
+        fmt.Printf("\033[1m\u001b[48;5;239m%v\n", strings.Repeat(" ", 100))
+        fmt.Printf("\033[1m\u001b[48;5;239m%v\n", strings.Repeat(" ", 100))
+        fmt.Printf("\033[1m\u001b[48;5;239m%v\n", strings.Repeat(" ", 100))
         fmt.Printf("\033[0;0H")
     }
 }
